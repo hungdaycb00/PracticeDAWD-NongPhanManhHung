@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                 int humidity = jsonMain.getInt("humidity");
                 double tempMin = jsonMain.getDouble("temp_min")- 273.15;
                 double tempMax = jsonMain.getDouble("temp_max")- 273.15;
-                Log.i("weatherInfo " , String.valueOf(temp));
 
                 if(!jsonMain.equals("")){
                     tempTview.setText("Temp: " + temp + "°C" );
